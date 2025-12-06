@@ -1,1 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+        <!-- Шапка -->
+    <header>
+        <nav>
+            <a href="#" class="logo">МойСайт</a>
+            <ul class="nav-links">
+                <li><a href="#about">О нас</a></li>
+                <li><a href="#products">Товары</a></li>
+                <li><a href="#contacts">Контакты</a></li>
+            </ul>
+        </nav>
+    </header>
 
+    <!-- Слайдер -->
+    <div class="slider-container">
+        <div class="slider-frame">
+            <div class="slider-images" id="sliderImages">
+                <img src="6.jpg" alt="Изображение 1" class="slider-image">
+                <img src="10.jpg" alt="Изображение 2" class="slider-image">
+                <img src="9.jpg" alt="Изображение 3" class="slider-image">
+            </div>
+        </div>
+        <div class="slider-indicators" id="sliderIndicators">
+            <div class="slider-dot active" data-index="0"></div>
+            <div class="slider-dot" data-index="1"></div>
+            <div class="slider-dot" data-index="2"></div>
+        </div>
+    </div>
+
+    <main>
+        <!-- Блок "О нас" -->
+        <section id="about">
+            <h2>О нас</h2>
+            <p>Мы — команда профессионалов, которая уже более 10 лет создает качественные продукты для наших клиентов. Наша миссия — предоставлять лучшие решения, отвечающие современным требованиям и ожиданиям.</p>
+            <div class="image-container">
+                <img src="1 (2).jpg" alt="О нас">
+            </div>
+            <p>Наша компания гордится своими достижениями и стремится к постоянному развитию и улучшению качества предоставляемых услуг.</p>
+            <a href="#contacts" class="btn">Связаться с нами</a>
+        </section>
+
+        <!-- Блок "Товары" -->
+        <section id="products">
+            <h2>Наши товары</h2>
+            <p>Представляем вашему вниманию нашу продуктовую линейку, созданную с использованием передовых технологий и с учетом всех требований современного рынка.</p>
+            
+            <div class="products-grid">
+                <div class="product-card">
+                    <img src="3 (2).jpg" alt="Товар 1">
+                    <h3>Классический портфель</h3>
+                    <p>Идеальный подарок для себя или для близкого человека, который ценит настоящее качество и классический стиль.
+
+Инвестируйте в качество, которое служит годами. Эта сумка станет вашим верным спутником на долгие годы, подчеркивая вашу индивидуальность и безупречный вкус.</p>
+                    <a href="#" class="btn btn-outline">Подробнее</a>
+                </div>
+                
+                <div class="product-card">
+                    <img src="4 (2).jpg" alt="Товар 2">
+                    <h3>Сумка-мессенджер</h3>
+                    <p>Идеально подходит для:
+
+Деловых встреч и офиса
+Путешествий и командировок
+Повседневного использования
+Сделайте свой выбор в пользу качества и стиля! Эта сумка станет вашим надежным спутником на долгие годы..</p>
+                    <a href="#" class="btn btn-outline">Подробнее</a>
+                </div>
+                
+                <div class="product-card">
+                    <img src="5.jpg" alt="Товар 3">
+                    <h3>Классическая сумка</h3>
+                    <p>Идеальный подарок для ценителя качественных вещей. Не упустите возможность обзавестись стильной и практичной сумкой, которая будет служить вам долгие годы!
+
+Цвет: Табачный (коньячный)
+Материал: Натуральная кожа
+Стиль: Классический, универсальный.</p>
+                    <a href="#" class="btn btn-outline">Подробнее</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Форма заказа -->
+        <section id="order">
+            <h2>Оформить заказ</h2>
+            <p>Заполните форму ниже, чтобы оформить заказ. Мы свяжемся с вами в ближайшее время для подтверждения.</p>
+            
+            <div class="order-form">
+                <form id="orderForm">
+                    <div class="form-group">
+                        <label for="name">Ваше имя *</label>
+                        <input type="text" id="name" required placeholder="Введите ваше имя">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="email">Электронная почта *</label>
+                        <input type="email" id="email" required placeholder="Введите ваш email">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="city">Город доставки *</label>
+                        <select id="city" required>
+                            <option value="">Выберите город</option>
+                            <option value="moscow">Москва</option>
+                            <option value="spb">Санкт-Петербург</option>
+                            <option value="kazan">Казань</option>
+                            <option value="novosibirsk">Новосибирск</option>
+                            <option value="ekaterinburg">Екатеринбург</option>
+                            <option value="other">Другой город</option>
+                        </select>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="comment">Комментарий (необязательно)</label>
+                        <textarea id="comment" rows="4" placeholder="Добавьте дополнительную информацию"></textarea>
+                    </div>
+                    
+                    <button type="submit" class="form-submit">Оформить заказ</button>
+                </form>
+            </div>
+        </section>
+
+        <!-- Блок "Контакты" -->
+        <section id="contacts">
+            <h2>Контакты</h2>
+            <p>Свяжитесь с нами удобным для вас способом. Мы всегда рады ответить на ваши вопросы и помочь с выбором.</p>
+            
+            <div class="contact-info">
+                <div class="contact-item">
+                    <h3>Адрес</h3>
+                    <p>г. Москва, ул. Примерная, д. 123</p>
+                </div>
+                
+                <div class="contact-item">
+                    <h3>Телефон</h3>
+                    <p>+7 (495) 123-45-67</p>
+                    <p>+7 (495) 987-65-43</p>
+                </div>
+                
+                <div class="contact-item">
+                    <h3>Email</h3>
+                    <p>info@mysite.ru</p>
+                    <p>support@mysite.ru</p>
+                </div>
+            </div>
+            
+            <div class="image-container">
+                <img src="7.png" alt="Карта контактов">
+            </div>
+            
+            <a href="mailto:info@mysite.ru" class="btn">Написать нам</a>
+        </section>
+    </main>
+<script src="new.js"></script>
+</body>
+</html>
